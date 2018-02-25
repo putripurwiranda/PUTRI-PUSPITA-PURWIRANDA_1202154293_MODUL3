@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.example.com.putri_1202154293.DetileActivity">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/aqua" />
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="23dp"
+        android:text="Aqua"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvJudul"
+        android:layout_alignStart="@+id/tvJudul"
+        android:layout_below="@+id/tvJudul"
+        android:layout_marginTop="30dp"
+        android:text="Deskripsi"
+        android:textColor="@android:color/background_dark"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:id="@+id/ivBaterai"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_above="@+id/btPlus"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_battery_20_black_24dp" />
+
+        <Button
+            android:id="@+id/btPlus"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_toEndOf="@+id/tvBanyakAir"
+            android:layout_toRightOf="@+id/tvBanyakAir"
+            android:text="+"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btMin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btPlus"
+            android:layout_alignBottom="@+id/btPlus"
+            android:layout_toLeftOf="@+id/ivBaterai"
+            android:layout_toStartOf="@+id/ivBaterai"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvBanyakAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btPlus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="1L"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
